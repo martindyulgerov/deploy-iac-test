@@ -1,7 +1,7 @@
 
 variable "server_count" {
   type        = number
-  default     = 3
+  default     = 1
   description = "The total number of VMs to create"
 }
 
@@ -25,12 +25,12 @@ variable "tags" {
 
 variable "instance_type" {
   type    = string
-  default = "t2.micro"
+  default = "t3.micro"
 }
 
 variable "root_volume_size" {
   type    = string
-  default = 50
+  default = 8
 }
 
 variable "production" {
